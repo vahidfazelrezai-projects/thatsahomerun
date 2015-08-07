@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>That's a home run!</title>
-
-	<style>
-		body {
-			background-image: url("picture.jpeg");
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-	</style>
+	<title>this is for you :)</title>
+	<link rel="stylesheet" type="text/css" href="stylin.css">
 </head>
 <body>
-	<audio loop="loop" autoplay="autoplay"> 
-   		<source src="music.mp3" />  
-	</audio> 
+
+<div class='waka-picture' style='background-image: url("WAKAWAKA_L2.PNG");'></div>
+<div class='waka-picture' style='background-image: url("WAKAWAKA_R2.PNG");'></div>
+
+
+<script>
+		var container = document.getElementsByClassName('waka-picture')[0];
+		var image = 0;
+
+		window.setTimeout(function(){
+			window.setInterval(function(){
+			if (image==0){image=100;}
+			else {image=0;}
+			container.style.zIndex = image;
+			}, 450);
+		}, 10000)
+		
+
+
+		
+
+</script>
+
+
+<audio autoplay>
+	<source src="bbandwaka.mp3" type='audio/mpeg'>
+</audio>
+
+<!-- could also use wakawaka.mp3 -->
+<!-- <audio src="/music/good_enough.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pRpeEdMmmQ0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+
+
 </body>
 </html>
