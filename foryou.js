@@ -12,7 +12,7 @@ window.onLoad = function(){
 
 
 function flipPhotos(){
-	var images = ['	WAKAWAKA_L2.PNG', 'WAKAWAKA_R2.PNG'];
+	var images = ['wakawaka_l2.PNG', 'wakawaka_r2.PNG'];
 	var image = 0;
 	if (image==0){image=1;}
 	if (image==1){image=0;}
